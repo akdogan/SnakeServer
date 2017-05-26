@@ -1,14 +1,7 @@
 package com.snake.server;
 
-import com.google.gson.Gson;
-
-/**
- * Created by client on 27.05.2017.
- */
 public class Main {
-    public static void main(String[] args) {
-        Gson gson = new Gson();
-        JSON decoded = gson.fromJson("{hello:\"World\"}", JSON.class);
-        System.out.println(decoded);
+    public static void main(String[] args) throws Exception {
+        new App().run(args);
     }
 }
